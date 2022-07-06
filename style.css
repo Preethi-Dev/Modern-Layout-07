@@ -183,7 +183,7 @@ main .arrow {
     display: block;
   }
 }
-
+/* Desktop Styles */
 @media screen and (min-width: 1200px) {
   main .name p {
     font-size: 21.875rem;
