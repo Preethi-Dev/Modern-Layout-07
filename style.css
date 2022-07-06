@@ -1,0 +1,208 @@
+/* Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "PP NeueBit Bold";
+  src: url(./assets/fonts/PPNeueBit-Bold.otf);
+}
+
+@font-face {
+  font-family: "PP NeueBit Regular";
+  src: url(./assets/fonts/PPMondwest-Regular.otf);
+}
+
+@font-face {
+  font-family: "PP Fraktion Mono Regular";
+  src: url(./assets/fonts/PPFraktionMono-Regular.otf);
+}
+
+@font-face {
+  font-family: "PP Fraktion Mono Bold";
+  src: url(./assets/fonts/PPFraktionMono-Bold.otf);
+}
+
+/* Variables */
+:root {
+  --primary: #000000;
+  --bg: #ffffff;
+}
+
+/* Base Styles */
+body {
+  background: #f6fff5;
+}
+
+header > .logo *,
+nav *,
+.email p {
+  font-family: "PP Fraktion Mono Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: var(--primary);
+}
+
+header .logo p {
+  font-weight: 700;
+}
+
+a {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  padding: 2rem;
+}
+
+main {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+main p {
+  color: var(--primary);
+}
+
+main .name p {
+  font-family: "PP NeueBit Bold";
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+main .intro__text > p {
+  font-family: "PP Fraktion Mono Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Mobile Styles */
+.email,
+.bg {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: [col-start] 1fr 1fr 1fr 1fr [col-end];
+  justify-items: center;
+  grid-row-gap: 2rem;
+}
+
+main > *,
+.name > * {
+  grid-column: col-start / col-end;
+}
+
+main .name p {
+  font-size: 6.875rem;
+}
+
+main .arrow {
+  justify-self: end;
+}
+
+/* Small Tablet Styles */
+@media screen and (min-width: 510px) {
+  .grid {
+    grid-template-columns: repeat(8, [col-start] 1fr) [col-end];
+  }
+
+  main .name p {
+    font-size: 8.875rem;
+    line-height: 100px;
+  }
+
+  main .intro__text {
+    grid-column: col-start 3 / span 4;
+  }
+}
+
+/* Large Tablet and Laptop styles */
+@media screen and (min-width: 960px) {
+  .grid {
+    grid-template-columns: repeat(12, [col-start] 1fr) [col-end];
+  }
+
+  .logo {
+    flex-grow: 1;
+  }
+
+  nav {
+    flex-grow: 2;
+  }
+
+  .navigation {
+    margin: 0 auto;
+  }
+
+  main .name p {
+    font-size: 10.875rem;
+    line-height: 150px;
+  }
+
+  main .intro__text {
+    grid-column: col-start 3 / span 4;
+  }
+
+  .email {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main .name p {
+    font-size: 21.875rem;
+    line-height: 250px;
+  }
+
+  .name {
+    position: relative;
+  }
+
+  .bg {
+    display: block;
+    position: absolute;
+    top: 5.5rem;
+    right: 26rem;
+  }
+
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
