@@ -197,8 +197,8 @@ main .arrow {
   .bg {
     display: block;
     position: absolute;
-    top: 5.5rem;
-    right: 26rem;
+    bottom: 2.35rem;
+    right: 11.5rem;
   }
 
   main {
