@@ -188,6 +188,7 @@ main .arrow {
   main .name p {
     font-size: 21.875rem;
     line-height: 250px;
+    z-index: 1;
   }
 
   .name {
@@ -198,7 +199,7 @@ main .arrow {
     display: block;
     position: absolute;
     bottom: 2.35rem;
-    right: 11.5rem;
+    right: 11rem;
   }
 
   main {
