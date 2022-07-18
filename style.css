@@ -191,17 +191,6 @@ main .arrow {
     z-index: 1;
   }
 
-  .name p:nth-child(2) {
-    position: relative;
-  }
-
-  .bg {
-    display: inline-block;
-    position: absolute;
-    top: 5.5rem;
-    right: 11rem;
-  }
-
   main {
     max-width: 1400px;
     margin: 0 auto;
