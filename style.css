@@ -191,14 +191,14 @@ main .arrow {
     z-index: 1;
   }
 
-  .name {
+  .name p:nth-child(2) {
     position: relative;
   }
 
   .bg {
-    display: block;
+    display: inline-block;
     position: absolute;
-    bottom: 2.35rem;
+    top: 5.5rem;
     right: 11rem;
   }
 
